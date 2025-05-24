@@ -140,16 +140,20 @@ export const getPositionStyle = (position: string) => {
     case "bottom":
       return css`
         border-radius: 8px 8px 0 0;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         left: 0;
+        right: 0;
+        margin: 0 auto;
       `;
     case "top":
       return css`
         border-radius: 0 0 8px 8px;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
+        right: 0;
+        margin: 0 auto;
       `;
     default:
       return css``;
